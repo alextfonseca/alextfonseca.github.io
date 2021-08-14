@@ -1,0 +1,28 @@
+.contact {
+  margin-top: 3rem;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      gap: 1rem;
+
+      background-color: var(--blueDark);
+      padding: 1rem 1.5rem;
+      border-radius: 0.125rem;
+    }
+  }
+}

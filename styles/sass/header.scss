@@ -1,0 +1,52 @@
+header {
+  position: fixed;
+  top: 0;
+
+  width: 90%;
+  padding: 0.5rem 0;
+
+  background: var(--background);
+  opacity: 0.8;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: var(--title);
+        font: 700 1.25rem "Roboto", sans-serif;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }
+    }
+  }
+
+  .socialMedias {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      padding: 0.5rem;
+
+      transition: filter 0.3s;
+
+      &:hover {
+        filter: brightness(0.5);
+      }
+    }
+  }
+}

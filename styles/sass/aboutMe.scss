@@ -1,0 +1,44 @@
+.aboutMe {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  .aboutme {
+    h3 {
+      margin-top: 0.5rem;
+
+      color: var(--text-primary);
+      font: 500 1.25rem "Roboto Mono", monospace;
+    }
+
+    p {
+      margin-top: 1rem;
+
+      color: var(--text);
+      font: 400 1.275rem "Roboto", sans-serif;
+      line-height: 2rem;
+    }
+  }
+
+  .myPhoto {
+    margin: 0 auto;
+  }
+
+  .courses {
+    ul {
+      margin-top: 2rem;
+      width: 500px;
+      li {
+        margin-top: 0.5rem;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.5rem;
+
+        color: var(--text);
+        font: 400 1.375rem "Roboto Mono", sans-serif;
+      }
+    }
+  }
+}
