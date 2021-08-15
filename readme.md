@@ -25,7 +25,7 @@ Windows:
 
 ```bash
 git clone https://github.com/alextfonseca/alextfonseca.github.io.git
-$ cd $ cd alextfonseca.github.io-main
+$ cd alextfonseca.github.io-main
 ```
 
 ## 🧾 Usando o projeto
