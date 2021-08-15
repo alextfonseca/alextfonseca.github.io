@@ -1,0 +1,46 @@
+.textEffect {
+  &::after {
+    content: " />";
+  }
+
+  &::before {
+    content: "<";
+  }
+}
+
+.tecnology {
+  position: relative;
+
+  animation: toRight 0.9s;
+}
+
+.separator {
+  img {
+    position: relative;
+    animation: arrow 3s infinite;
+  }
+}
+
+@keyframes toRight {
+  to {
+    left: 0;
+  }
+
+  from {
+    left: 1000px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0;
+  }
+}

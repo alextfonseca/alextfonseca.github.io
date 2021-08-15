@@ -1,0 +1,128 @@
+// sobre mim
+@media (max-width: 1080px) {
+  .aboutMe {
+    grid-template-columns: repeat(2, 1fr);
+
+    .myPhoto {
+      display: none;
+    }
+  }
+}
+
+// sobre
+@media (max-width: 1140px) {
+  .introduction {
+    flex-direction: column;
+    margin-top: 15rem;
+
+    .about {
+      width: 100%;
+    }
+  }
+}
+
+// sobre
+
+@media (max-width: 700px) {
+  .introduction {
+    flex-direction: column;
+    margin-top: 15rem;
+
+    .about {
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// conhecimento
+@media (max-width: 580px) {
+  .introduction {
+    flex-direction: column;
+    animation: none;
+
+    .tecnology {
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+// conhecimento
+@media (max-width: 550px) {
+  .introduction {
+    flex-direction: column;
+
+    .tecnology {
+      ul {
+        grid-template-columns: repeat(2, 100px);
+        gap: 0.125rem;
+        margin: 2rem auto;
+      }
+    }
+  }
+}
+
+// projetos
+@media (max-width: 1125px) {
+  .projectsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// sobre
+@media (max-width: 900px) {
+  .aboutMe {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// contato
+@media (max-width: 900px) {
+  .contact {
+    ul {
+      flex-direction: column;
+      li {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// footer
+@media (max-width: 500px) {
+  .footer {
+    p {
+      display: none;
+    }
+  }
+}
+
+// header
+@media (max-width: 780px) {
+  header {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    z-index: -1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    .socialMedias {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+  }
+}
