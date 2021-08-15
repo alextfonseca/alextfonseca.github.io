@@ -8,16 +8,17 @@
   <meta name="description" content="Portfólio pessoal criado com html e css, com o objetivo de mostrar meus conhecimentos no desenvolvimento front-end" />
 
   <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="shortcut icon" href="./public/icons/favicon.svg" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  <title>Portfólio | Alex T.F.</title>
+  <title>Portfólio | Alex Teixeira da Fonseca</title>
 </head>
 
 <body>
-  <section class="container">
+  <main class="container">
     <header>
       <img src="./public/icons/logo.svg" alt="Logo escrito Alex T.F. roxo entre tags do html" />
       <nav>
@@ -26,7 +27,7 @@
           <li><img src="./public/icons/listIcon.svg" alt="-" /></li>
           <li><a href="#projects">Projetos</a></li>
           <li><img src="./public/icons/listIcon.svg" alt="-" /></li>
-          <li><a href="#aboutMe">Sobre mim</a></li>
+          <li><a href="#aboutMe">Sobre</a></li>
           <li><img src="./public/icons/listIcon.svg" alt="-" /></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
@@ -43,224 +44,224 @@
       </div>
     </header>
 
-    <main id="inicio">
-      <section class="introduction">
-        <div class="about">
-          <span class="textEffect">Front-end developer</span>
-          <h1>Alex Teixeira da Fonseca</h1>
-          <p>
-            Entusiasta das melhores tecnologias front-end como React.js e
-            Next.js Atualmente fazendo o treinamento Ignite, sobre React.js e
-            afins
-          </p>
+    <section class="introduction" id="inicio">
+      <div class="about">
+        <span class="textEffect">Front-end developer</span>
+        <h1>Alex Teixeira da Fonseca</h1>
+        <p>
+          Entusiasta das melhores tecnologias front-end como React.js e
+          Next.js Atualmente fazendo o treinamento Ignite, sobre React.js e
+          afins
+        </p>
 
-          <a href="cv/CV_Desenvolvedor_Front_End_Junior-Alex-Teixeira-da-Fonseca.pdf" rel="noopener" download="CV_Desenvolvedor_Front_End_Junior-Alex-Teixeira-da-Fonseca.pdf">Meu currículo</a>
-        </div>
-
-        <div class="tecnology">
-          <h2>Conhecimento</h2>
-          <ul>
-            <li class="html">
-              <img src="./public/icons/html-icon.svg" alt="Ícone do html" />
-              <span>HTML</span>
-            </li>
-            <li>
-              <img src="./public/icons/css-icon.svg" alt="Ícone do css" />
-              <span>CSS</span>
-            </li>
-            <li>
-              <img src="./public/icons/sass-icon.svg" alt="Ícone do sass" />
-              <span>SASS</span>
-            </li>
-            <li>
-              <img src="./public/icons/bootstrap-icon.svg" alt="Ícone do bootstrap" />
-              <span>Boostrap</span>
-            </li>
-            <li>
-              <img src="./public/icons/git-icon.svg" alt="Ícone do git" />
-              <span>Git</span>
-            </li>
-            <li>
-              <img src="./public/icons/js-icon.svg" alt="Ícone do javascript" />
-              <span>Javascript</span>
-            </li>
-            <li>
-              <img src="./public/icons/react-icon.svg" alt="Ícone do react" />
-              <span>React.js</span>
-            </li>
-            <li>
-              <img src="./public/icons/typescript-icon.svg" alt="Ícone do typescript" />
-              <span>Typescript</span>
-            </li>
-            <li>
-              <img src="./public/icons/next-icon.svg" alt="Ícone do next" />
-              <span>Next.js</span>
-            </li>
-            <li>
-              <img src="./public/icons/styled-components-icon.svg" alt="Ícone do styled components" />
-              <span>Styled Components</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="separator">
-        <a href="#projects" rel="noopener"><img src="./public/icons/expandContentIcon.svg" alt="Ícone para mostrar que existe mais conteúdo" /></a>
-        <div class="separatorLine"></div>
+        <a href="cv/CV_Desenvolvedor_Front_End_Junior-Alex-Teixeira-da-Fonseca.pdf" rel="noopener" download="CV_Desenvolvedor_Front_End_Junior-Alex-Teixeira-da-Fonseca.pdf">Meu currículo</a>
       </div>
 
-      <section class="projects" id="projects">
-        <h2>Projetos <span>.</span></h2>
-
-        <div class="projectsList">
-
-          <div class="projectCard">
-            <img src="./public/images/blogNewsProject.png" alt="Foto do projeto blog news">
-
-            <h3>Blog News</h3>
-
-            <p>Blog de notícias criado com Next.js e utilizando a API do google news, sendo atualizado todas as notícias a cada 1 hora utilizando o conceito de SSG para gerar uma página estática quando as notícias são acessadas.</p>
-
-            <h3>Tecnologias</h3>
-
-            <ul>
-              <li>Next.js</li>
-              <li>Google News(API)</li>
-              <li>Typescript</li>
-            </ul>
-
-            <div class="buttons">
-              <a class="repositorie" href="https://github.com/alextfonseca/blognews" rel="noopener" target="_blank">Repositório</a>
-              <a class="access" href="https://blognews.vercel.app" rel="noopener" target="_blank">Acessar</a>
-            </div>
-          </div>
-
-          <div class="projectCard">
-            <img src="./public/images/dashGoProject.png" alt="Foto do projeto dashGo">
-
-            <h3>DashGo</h3>
-
-            <p>Dashgo é um aplicação criada no quarto módulo da trilha do ignite, interface foi criada
-              com next.js e interface declarativa com chakra ui</p>
-
-            <h3>Tecnologias</h3>
-
-            <ul>
-              <li>Next.js</li>
-              <li>Chakra ui</li>
-              <li>React Query</li>
-              <li>Typescript</li>
-              <li>Mirage js</li>
-            </ul>
-
-            <div class="buttons">
-              <a class="repositorie" href="https://github.com/alextfonseca/dashgo" rel="noopener" target="_blank">Repositório</a>
-              <a class="access" href="https://dashgo-pink.vercel.app/dashboard" rel="noopener" target="_blank">Acessar</a>
-            </div>
-          </div>
-
-          <div class="projectCard">
-            <img src="./public/images/travelProject.png" alt="Foto do projeto Travel">
-
-            <h3>Travel</h3>
-
-            <p>Travel é um site de viagens pelo mundo, toda aplicação foi construída com React.js,
-              chakra ui e typescript. O objetivo é treinar os conhecimentos adquiridos no treinamento do
-              Ignite da Rocketseat.</p>
-
-            <h3>Tecnologias</h3>
-
-            <ul>
-              <li>React.js</li>
-              <li>Chakra ui</li>
-              <li>Typescript</li>
-
-            </ul>
-
-            <div class="buttons">
-              <a class="repositorie" href="https://github.com/alextfonseca/Travel" rel="noopener" target="_blank">Repositório</a>
-              <a class="access" href="https://travel-zeta.vercel.app" rel="noopener" target="_blank">Acessar</a>
-            </div>
-          </div>
-
-          <div class="projectCard">
-            <img src="./public/images/worldTripProject.png" alt="Foto do projeto World Trip">
-
-            <h3>World Trip</h3>
-
-            <p>Travel é um site de viagens pelo mundo, toda aplicação foi construída com React.js,
-              chakra ui e typescript. O objetivo é treinar os conhecimentos adquiridos no treinamento
-              do Ignite da Rocketseat.</p>
-
-            <h3>Tecnologias</h3>
-
-            <ul>
-              <li>Next.js</li>
-              <li>Json server</li>
-              <li>Typescript</li>
-
-            </ul>
-
-            <div class="buttons">
-              <a class="repositorie" href="https://github.com/alextfonseca/worldTrip" rel="noopener" target="_blank">Repositório</a>
-              <a class="access" href="https://worldtrip-kappa.vercel.app" rel="noopener" target="_blank">Acessar</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="separator">
-        <div class="separatorLine"></div>
+      <div class="tecnology">
+        <h2>Conhecimento</h2>
+        <ul>
+          <li class="html">
+            <img src="./public/icons/html-icon.svg" alt="Ícone do html" />
+            <span>HTML</span>
+          </li>
+          <li>
+            <img src="./public/icons/css-icon.svg" alt="Ícone do css" />
+            <span>CSS</span>
+          </li>
+          <li>
+            <img src="./public/icons/sass-icon.svg" alt="Ícone do sass" />
+            <span>SASS</span>
+          </li>
+          <li>
+            <img src="./public/icons/bootstrap-icon.svg" alt="Ícone do bootstrap" />
+            <span>Boostrap</span>
+          </li>
+          <li>
+            <img src="./public/icons/git-icon.svg" alt="Ícone do git" />
+            <span>Git</span>
+          </li>
+          <li>
+            <img src="./public/icons/js-icon.svg" alt="Ícone do javascript" />
+            <span>Javascript</span>
+          </li>
+          <li>
+            <img src="./public/icons/react-icon.svg" alt="Ícone do react" />
+            <span>React.js</span>
+          </li>
+          <li>
+            <img src="./public/icons/typescript-icon.svg" alt="Ícone do typescript" />
+            <span>Typescript</span>
+          </li>
+          <li>
+            <img src="./public/icons/next-icon.svg" alt="Ícone do next" />
+            <span>Next.js</span>
+          </li>
+          <li>
+            <img src="./public/icons/styled-components-icon.svg" alt="Ícone do styled components" />
+            <span>Styled Components</span>
+          </li>
+        </ul>
       </div>
+    </section>
 
-      <section class="aboutMe" id="aboutMe">
+    <div class="separator">
+      <a href="#projects" rel="noopener"><img src="./public/icons/expandContentIcon.svg" alt="Ícone para mostrar que existe mais conteúdo" /></a>
+      <div class="separatorLine"></div>
+    </div>
 
-        <div class="aboutme">
-          <h2>Sobre mim <span>.</span> </h2>
-          <h3>Alex Teixeira da Fonseca</h3>
+    <section class="projects" id="projects">
+      <h2>Projetos <span>.</span></h2>
 
-          <p>Dinâmico, espírito de servir, trabalho em grupo, boa comunicação e facilidade em trabalhar nos padrões exigidos pela empresa.<br>
+      <div class="projectsList">
 
-            Estou em busca de minha primeira oportunidade na área de tecnologia.
-            <br>
-            Fui aluno representante, tutor na área de exatas e capitão da equipe de robótica do SESI São Roque.
-            Atualmente faço Sistemas para Internet na F.A.T.E.C. de São Roque SP, estudo muito a área de U.I./U.X. design e desenvolvimento Front-end.
-          </p>
-        </div>
-        <div class="myPhoto">
-          <img src="public/images/myPhoto.png" alt="Minha foto">
-        </div>
-        <div class="courses">
-          <h2>Cursos <span>.</span> </h2>
+        <div class="projectCard">
+          <img src="./public/images/blogNewsProject.png" alt="Foto do projeto blog news">
+
+          <h3>Blog News</h3>
+
+          <p>Blog de notícias criado com Next.js e utilizando a API do google news, sendo atualizado todas as notícias a cada 1 hora utilizando o conceito de SSG para gerar uma página estática quando as notícias são acessadas.</p>
+
+          <h3>Tecnologias</h3>
 
           <ul>
-            <li>Ignite React.js (Rockteseat)</li>
-            <li>JavaScript ES6+ (Origamid)</li>
-            <li>Css com Sass (Origamid)</li>
-            <li>Boostrap 4 (Origamid)</li>
-            <li>UX Design (Origamid)</li>
-            <li>CSS Grid Layout (Origamid)</li>
-            <li>UI Design Avançado (Origamid)</li>
-            <li>Tipografia Avançada (Origamid)</li>
-            <li>Web Design Completo (Origamid)</li>
+            <li>Next.js</li>
+            <li>Google News(API)</li>
+            <li>Typescript</li>
           </ul>
+
+          <div class="buttons">
+            <a class="repositorie" href="https://github.com/alextfonseca/blognews" rel="noopener" target="_blank">Repositório</a>
+            <a class="access" href="https://blognews.vercel.app" rel="noopener" target="_blank">Acessar</a>
+          </div>
         </div>
 
-      </section>
+        <div class="projectCard">
+          <img src="./public/images/dashGoProject.png" alt="Foto do projeto dashGo">
 
-      <section class="contact" id="contact">
-        <h2>Contato <span>.</span> </h2>
+          <h3>DashGo</h3>
+
+          <p>Dashgo é um aplicação criada no quarto módulo da trilha do ignite, interface foi criada
+            com next.js e interface declarativa com chakra ui</p>
+
+          <h3>Tecnologias</h3>
+
+          <ul>
+            <li>Next.js</li>
+            <li>Chakra ui</li>
+            <li>React Query</li>
+            <li>Typescript</li>
+            <li>Mirage js</li>
+          </ul>
+
+          <div class="buttons">
+            <a class="repositorie" href="https://github.com/alextfonseca/dashgo" rel="noopener" target="_blank">Repositório</a>
+            <a class="access" href="https://dashgo-pink.vercel.app/dashboard" rel="noopener" target="_blank">Acessar</a>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <img src="./public/images/travelProject.png" alt="Foto do projeto Travel">
+
+          <h3>Travel</h3>
+
+          <p>Travel é um site de viagens pelo mundo, toda aplicação foi construída com React.js,
+            chakra ui e typescript. O objetivo é treinar os conhecimentos adquiridos no treinamento do
+            Ignite da Rocketseat.</p>
+
+          <h3>Tecnologias</h3>
+
+          <ul>
+            <li>React.js</li>
+            <li>Chakra ui</li>
+            <li>Typescript</li>
+
+          </ul>
+
+          <div class="buttons">
+            <a class="repositorie" href="https://github.com/alextfonseca/Travel" rel="noopener" target="_blank">Repositório</a>
+            <a class="access" href="https://travel-zeta.vercel.app" rel="noopener" target="_blank">Acessar</a>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <img src="./public/images/worldTripProject.png" alt="Foto do projeto World Trip">
+
+          <h3>World Trip</h3>
+
+          <p>Travel é um site de viagens pelo mundo, toda aplicação foi construída com React.js,
+            chakra ui e typescript. O objetivo é treinar os conhecimentos adquiridos no treinamento
+            do Ignite da Rocketseat.</p>
+
+          <h3>Tecnologias</h3>
+
+          <ul>
+            <li>Next.js</li>
+            <li>Json server</li>
+            <li>Typescript</li>
+
+          </ul>
+
+          <div class="buttons">
+            <a class="repositorie" href="https://github.com/alextfonseca/worldTrip" rel="noopener" target="_blank">Repositório</a>
+            <a class="access" href="https://worldtrip-kappa.vercel.app" rel="noopener" target="_blank">Acessar</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="separator">
+      <div class="separatorLine"></div>
+    </div>
+
+    <section class="aboutMe" id="aboutMe">
+
+      <div class="aboutme">
+        <h2>Sobre <span>.</span> </h2>
+        <h3>Alex Teixeira da Fonseca</h3>
+
+        <p>Dinâmico, espírito de servir, trabalho em grupo, boa comunicação e facilidade em trabalhar nos padrões exigidos pela empresa.<br>
+
+          Estou em busca de minha primeira oportunidade na área de tecnologia.
+          <br>
+          Fui aluno representante, tutor na área de exatas e capitão da equipe de robótica do SESI São Roque.
+          Atualmente faço Sistemas para Internet na F.A.T.E.C. de São Roque SP, estudo muito a área de U.I./U.X. design e desenvolvimento Front-end.
+        </p>
+      </div>
+
+
+      <div class="courses">
+        <h2>Cursos <span>.</span> </h2>
 
         <ul>
-          <li><img src="./public/icons/emailIcon.svg" alt="Ícone de um e-mail branco"> alexatf2014@gmail.com</li>
-          <li><img src="./public/icons/phoneIcon.svg" alt="Ícone de um telefone branco"> (11) 4714-1038</li>
-          <li><img src="./public/icons/whatsappIcon.svg" alt="Ícone do whatsapp branco"> (11) 97618-4659</li>
+          <li>Ignite React.js (Rockteseat)</li>
+          <li>JavaScript ES6+ (Origamid)</li>
+          <li>Css com Sass (Origamid)</li>
+          <li>Boostrap 4 (Origamid)</li>
+          <li>UX Design (Origamid)</li>
+          <li>CSS Grid Layout (Origamid)</li>
+          <li>UI Design Avançado (Origamid)</li>
+          <li>Tipografia Avançada (Origamid)</li>
+          <li>Web Design Completo (Origamid)</li>
         </ul>
+      </div>
 
-      </section>
-    </main>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contato <span>.</span> </h2>
+
+      <ul>
+        <li><img src="./public/icons/emailIcon.svg" alt="Ícone de um e-mail branco"> alexatf2014@gmail.com</li>
+        <li><img src="./public/icons/phoneIcon.svg" alt="Ícone de um telefone branco"> (11) 4714-1038</li>
+        <li><img src="./public/icons/whatsappIcon.svg" alt="Ícone do whatsapp branco"> (11) 97618-4659</li>
+      </ul>
+
+    </section>
+
     <a class="up" href="#inicio" rel="noopener"><img src="./public/icons/upButton.svg" alt="Voltar ao inicio"></a>
-  </section>
+  </main>
+
 
 
   <footer class="footer">

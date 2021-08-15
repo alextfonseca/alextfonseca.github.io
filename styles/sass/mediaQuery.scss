@@ -1,14 +1,3 @@
-// sobre mim
-@media (max-width: 1080px) {
-  .aboutMe {
-    grid-template-columns: repeat(2, 1fr);
-
-    .myPhoto {
-      display: none;
-    }
-  }
-}
-
 // sobre
 @media (max-width: 1140px) {
   .introduction {
@@ -78,6 +67,7 @@
 @media (max-width: 900px) {
   .aboutMe {
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 }
 
