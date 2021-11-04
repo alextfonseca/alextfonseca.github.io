@@ -2,7 +2,7 @@
 
 <img src="./public/images/portfolio.png" alt="foto do projeto">
 
-> Portfólio pessoal construído com HTML e SASS, foco em mostrar minhas habilidades como desenvolvedor front-end..
+> Portfólio pessoal construído com HTML, Javascript e SASS, foco em mostrar minhas habilidades como desenvolvedor front-end..
 
 ## 💻 Pré-requisitos
 
