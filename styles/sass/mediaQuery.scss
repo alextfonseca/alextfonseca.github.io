@@ -1,0 +1,116 @@
+// cursos
+@media (max-width: 1200px) {
+  .studies {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .studies {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .studies {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// introdução
+@media (max-width: 1300px) {
+  .introduction {
+    padding-top: 10rem;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introduction .about {
+    h1 {
+      text-align: center;
+    }
+    a {
+      display: block;
+      text-align: center;
+
+      margin: 2rem auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .introduction .technologies .technologiesList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// projects
+@media (max-width: 1000px) {
+  .projects {
+    .container {
+      .projectsList {
+        display: flex;
+        flex-direction: column;
+        gap: 2fr;
+      }
+    }
+  }
+}
+
+// projects
+@media (max-width: 600px) {
+  .projects .projectsList .project .aboutProject {
+    ul li img {
+      width: 70%;
+    }
+  }
+}
+
+// contatos
+@media (max-width: 650px) {
+  .contact {
+    .contacts {
+      display: block;
+
+      div + div {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+// header
+@media (max-width: 1100px) {
+  header {
+    .container {
+      display: grid;
+      grid-template-areas: "logo links nav";
+
+      nav {
+        grid-area: nav;
+      }
+
+      .logo {
+        grid-area: logo;
+      }
+
+      .socialMediaLinks {
+        grid-area: links;
+      }
+    }
+  }
+}

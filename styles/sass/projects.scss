@@ -1,0 +1,121 @@
+.projects {
+  margin-top: 2rem;
+  padding: 2rem 0;
+
+  background: var(--blueDark);
+
+  .container {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+
+        span {
+          color: var(--blue);
+          font-size: 3rem;
+        }
+      }
+
+      a {
+        border: 2px solid;
+        border-image: linear-gradient(
+            227.91deg,
+            var(--blue) 0%,
+            var(--purple) 100%
+          )
+          1;
+
+        padding: 1rem 2rem;
+
+        color: var(--title);
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
+    .projectsList {
+      margin-top: 2rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      .project {
+        position: relative;
+
+        .projectPhoto {
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.project {
+  &:hover {
+    .aboutProject {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.aboutProject {
+  display: none;
+
+  animation: showAboutProject 0.3s;
+
+  position: absolute;
+  top: 0;
+
+  padding: 2rem;
+
+  background: rgba(0, 0, 0, 0.9);
+
+  width: 90%;
+  height: 100%;
+
+  p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  span {
+    display: block;
+
+    margin-top: 2rem;
+
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 1rem;
+
+    a {
+      color: var(--title);
+      border: 2px solid var(--blue);
+      border-radius: 0.125rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.225rem;
+    }
+  }
+}

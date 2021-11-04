@@ -1,0 +1,26 @@
+.contact {
+  margin-top: 6rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+
+    span {
+      color: var(--blue);
+      font-size: 3rem;
+    }
+  }
+
+  .contacts {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+    }
+  }
+}

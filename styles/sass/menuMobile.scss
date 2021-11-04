@@ -1,0 +1,91 @@
+#btn-mobile {
+  display: none;
+}
+
+// botão
+@media (max-width: 1100px) {
+  header {
+    #nav {
+      #menu {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 85px;
+        right: 0;
+        background-image: linear-gradient(to left, var(--blue), var(--purple));
+        flex-direction: column;
+        justify-content: start;
+        height: 1px;
+        z-index: 9999;
+        visibility: hidden;
+        overflow-y: hidden;
+
+        transition: 0.6s;
+
+        li {
+          padding: 0.5rem 0;
+
+          a {
+            font-size: 1.5rem;
+          }
+
+          &:first-child {
+            margin-top: 2rem;
+          }
+        }
+      }
+
+      &.active #menu {
+        height: calc(100vh - 85px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  #btn-mobile {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+
+    color: var(--title);
+    font-size: 1.25rem;
+    font-family: "Roboto Mono", monospace;
+
+    #hamburguer {
+      width: 30px;
+      border-top: 2px solid var(--blue);
+      color: var(--blue);
+
+      &::after,
+      &:before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+    }
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+
+    &:before {
+      transform: rotate(135deg);
+    }
+
+    &:after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes floatEffect {
+  0%,
+  100% {
+    top: -10px;
+  }
+  50% {
+    top: 0;
+  }
+}
+
+@keyframes showAboutProject {
+  from {
+    top: 300px;
+  }
+
+  to {
+    top: 0;
+  }
+}

@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  height: 90px;
+
+  position: fixed;
+
+  width: 100%;
+
+  z-index: 99999;
+
+  background: var(--blueDark);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+
+      a {
+        color: var(--title);
+        font-size: 1.25rem;
+        font-family: "Roboto Mono", monospace;
+        font-weight: bold;
+      }
+    }
+
+    .socialMediaLinks {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}

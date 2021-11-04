@@ -1,0 +1,22 @@
+.aboutMe {
+  margin-top: 6rem;
+
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+
+    span {
+      color: var(--blue);
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
