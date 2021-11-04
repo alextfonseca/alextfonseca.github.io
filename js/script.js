@@ -37,3 +37,12 @@ function toggleMenu(event) {
 btnMobile.addEventListener("click", toggleMenu);
 
 btnMobile.addEventListener("touchstart", toggleMenu);
+
+// fechar o menu mobile quando clicar em um link interno
+const navLinks = document.querySelectorAll("#menu li a");
+
+navLinks.forEach((item) => {
+  item.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
