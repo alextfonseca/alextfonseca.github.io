@@ -73,9 +73,26 @@
 
 // projects
 @media (max-width: 600px) {
-  .projects .projectsList .project .aboutProject {
-    ul li img {
-      width: 70%;
+  .projects {
+    .projectsList .project .aboutProject {
+      ul li img {
+        width: 70%;
+      }
+    }
+
+    .container .header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    .projectsList .project .aboutProject {
+      span {
+        display: none;
+      }
     }
   }
 }
@@ -110,6 +127,7 @@
 
       .socialMediaLinks {
         grid-area: links;
+        margin: 0;
       }
     }
   }
