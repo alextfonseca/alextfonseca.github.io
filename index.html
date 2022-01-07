@@ -1,373 +1,611 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Portfólio pessoal construído com HTML e SASS, foco em mostrar minhas habilidades como desenvolvedor front-end."
+    />
 
-  <!-- SEO -->
-  <meta name="description" content="Portfólio pessoal construído com HTML e SASS, foco em mostrar minhas habilidades como desenvolvedor front-end.">
+    <link rel="shortcut icon" href="./public/favicon.svg" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="./public/favicon.svg" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- estilos -->
+    <link rel="stylesheet" href="./styles/index.css" />
 
-  <!-- estilos -->
-  <link rel="stylesheet" href="./styles/index.css" />
+    <title>Portfólio | Alex T.F.</title>
+  </head>
 
-  <title>Portfólio | Alex T.F.</title>
-</head>
+  <body id="start">
+    <header>
+      <div class="container">
+        <a class="logo" href="#start" rel="noopener"
+          ><img
+            src="./public/icons/logo.svg"
+            alt="Logo do site escrito Alex T.F. em branco entre tags do html"
+        /></a>
 
-<body id="start">
-  <header>
-    <div class="container">
-      <a class="logo" href="#start" rel="noopener"><img src="./public/icons/logo.svg" alt="Logo do site escrito Alex T.F. em branco entre tags do html" /></a>
+        <nav id="nav">
+          <button
+            id="btn-mobile"
+            aria-label="Abrir menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu
+            <span id="hamburguer"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#projects" rel="noopener">Principais projetos</a></li>
+            <li><img src="./public/icons/navSeparator-icon.svg" alt="-" /></li>
+            <li><a href="#aboutMe" rel="noopener">Sobre mim</a></li>
+            <li><img src="./public/icons/navSeparator-icon.svg" alt="-" /></li>
+            <li><a href="#studies" rel="noopener">Cursos</a></li>
+            <li><img src="./public/icons/navSeparator-icon.svg" alt="-" /></li>
+            <li><a href="#contact" rel="noopener">Contato</a></li>
 
-      <nav id="nav">
-        <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-          <span id="hamburguer"></span>
-        </button>
-        <ul id="menu" role="menu">
-          <li><a href="#projects" rel="noopener">Principais projetos</a></li>
-          <li><img src="./public/icons/navSeparator-icon.svg" alt="-" /></li>
-          <li><a href="#aboutMe" rel="noopener">Sobre mim</a></li>
-          <li><img src="./public/icons/navSeparator-icon.svg" alt="-" /></li>
-          <li><a href="#studies" rel="noopener">Cursos</a></li>
-          <li><img src="./public/icons/navSeparator-icon.svg" alt="-" /></li>
-          <li><a href="#contact" rel="noopener">Contato</a></li>
-
-          <li class="socialMediaLinks">
-            <a href="https://www.linkedin.com/in/alex-teixeira-da-fonseca-5a99931a2/" target="_blank" rel="noopener"><img src="./public/icons/linkedinLink-icon.svg" alt="ícone do linkedin na cor azul"></a>
-            <a href="https://github.com/alextfonseca" target="_blank" rel="noopener"><img src="./public/icons/githubLink-icon.svg" alt="ícone do linkedin na cor azul"></a>
-          </li>
-        </ul>
-
-
-      </nav>
-
-
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-
-      <section class="introduction">
-
-        <div class="about">
-          <p class="developer">
-            <<span class="textEffect">
-              Front-end developer
-              </span>
-              />
-          </p>
-          <h1>Alex Teixeira da Fonseca</h1>
-
-          <p class="aboutText">Entusiasta das melhores tecnologias front-end como React.js e Next.js
-            Atualmente fazendo o treinamento Ignite, sobre React.js e afins</p>
-
-          <a href="cv/CV_Desenvolvedor_Front_End_Estagio-Alex-Teixeira-da-Fonseca.pdf" rel="noopener" download="CV_Desenvolvedor_Front_End_Estagio-Alex-Teixeira-da-Fonseca.pdf">Meu currículo</a>
-        </div>
-
-        <div class="technologies">
-          <h2>Conhecimento</h2>
-          <ul class="technologiesList">
-            <li><img src="./public/icons/git-icon.svg" alt="Ícone do git"> <span>Git</span></li>
-            <li><img src="./public/icons/sass-icon.svg" alt="Ícone do sass"> <span>SASS</span></li>
-            <li><img src="./public/icons/css-icon.svg" alt="Ícone do css"> <span>CSS</span></li>
-            <li><img src="./public/icons/react-icon.svg" alt="Ícone do react"> <span>React</span></li>
-            <li><img src="./public/icons/styled-components-icon.svg" alt="Ícone do styled components"> <span>Styled components</span></li>
-            <li><img src="./public/icons/typescript-icon.svg" alt="Ícone do typescript"> <span>Typescript</span></li>
-            <li><img src="./public/icons/bootstrap-icon.svg" alt="Ícone do bootstrap"> <span>Bootstrap</span></li>
-            <li><img src="./public/icons/html-icon.svg" alt="Ícone do html"> <span>HTML</span></li>
-            <li><img src="./public/icons/js-icon.svg" alt="Ícone do javascript"> <span>Javascript</span></li>
-            <li><img src="./public/icons/next-icon.svg" alt="Ícone do next"> <span>Next.js</span></li>
-            <li><img src="./public/icons/node-icon.svg" alt="Ícone do node"> <span>Node.js</span></li>
-            <li><img src="./public/icons/sequelize-icon.svg" alt="Ícone do sequelize"> <span>Sequelize</span></li>
-            <li><img src="./public/icons/mysql-icon.svg" alt="Ícone do mysql"> <span>MySql</span></li>
+            <li class="socialMediaLinks">
+              <a
+                href="https://www.linkedin.com/in/alex-teixeira-da-fonseca-5a99931a2/"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="./public/icons/linkedinLink-icon.svg"
+                  alt="ícone do linkedin na cor azul"
+              /></a>
+              <a
+                href="https://github.com/alextfonseca"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="./public/icons/githubLink-icon.svg"
+                  alt="ícone do linkedin na cor azul"
+              /></a>
+            </li>
           </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="introduction">
+          <div class="about">
+            <p class="developer">
+              <<span class="textEffect"> Front-end developer </span>
+              />
+            </p>
+            <h1>Alex Teixeira da Fonseca</h1>
+
+            <p class="aboutText">
+              Entusiasta das melhores tecnologias front-end como React.js e
+              Next.js Atualmente fazendo o treinamento Ignite, sobre React.js e
+              afins
+            </p>
+
+            <a
+              href="cv/CV_Desenvolvedor_Front_End-Alex-Teixeira-da-Fonseca.pdf"
+              rel="noopener"
+              download="CV_Desenvolvedor_Front_End-Alex-Teixeira-da-Fonseca.pdf"
+              >Meu currículo</a
+            >
+          </div>
+
+          <div class="technologies">
+            <h2>Conhecimento</h2>
+            <ul class="technologiesList">
+              <li>
+                <img src="./public/icons/git-icon.svg" alt="Ícone do git" />
+                <span>Git</span>
+              </li>
+              <li>
+                <img src="./public/icons/sass-icon.svg" alt="Ícone do sass" />
+                <span>SASS</span>
+              </li>
+              <li>
+                <img src="./public/icons/css-icon.svg" alt="Ícone do css" />
+                <span>CSS</span>
+              </li>
+              <li>
+                <img src="./public/icons/react-icon.svg" alt="Ícone do react" />
+                <span>React</span>
+              </li>
+              <li>
+                <img
+                  src="./public/icons/styled-components-icon.svg"
+                  alt="Ícone do styled components"
+                />
+                <span>Styled components</span>
+              </li>
+              <li>
+                <img
+                  src="./public/icons/typescript-icon.svg"
+                  alt="Ícone do typescript"
+                />
+                <span>Typescript</span>
+              </li>
+              <li>
+                <img
+                  src="./public/icons/bootstrap-icon.svg"
+                  alt="Ícone do bootstrap"
+                />
+                <span>Bootstrap</span>
+              </li>
+              <li>
+                <img src="./public/icons/html-icon.svg" alt="Ícone do html" />
+                <span>HTML</span>
+              </li>
+              <li>
+                <img
+                  src="./public/icons/js-icon.svg"
+                  alt="Ícone do javascript"
+                />
+                <span>Javascript</span>
+              </li>
+              <li>
+                <img src="./public/icons/next-icon.svg" alt="Ícone do next" />
+                <span>Next.js</span>
+              </li>
+              <li>
+                <img src="./public/icons/node-icon.svg" alt="Ícone do node" />
+                <span>Node.js</span>
+              </li>
+              <li>
+                <img
+                  src="./public/icons/sequelize-icon.svg"
+                  alt="Ícone do sequelize"
+                />
+                <span>Sequelize</span>
+              </li>
+              <li>
+                <img src="./public/icons/mysql-icon.svg" alt="Ícone do mysql" />
+                <span>MySql</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <a class="separator" href="#projects" rel="noopener"
+          ><img
+            src="./public/icons/expandContent-icon.svg"
+            alt="ícone de uma seta apontada para baixo"
+        /></a>
+      </div>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="header">
+            <h2>Principais projetos <span>.</span></h2>
+            <a
+              href="https://github.com/alextfonseca?tab=repositories"
+              target="_blank"
+              rel="noopener"
+              >Todos projetos</a
+            >
+          </div>
+
+          <div class="projectsList">
+            <div class="project">
+              <img
+                class="projectPhoto"
+                src="./public/images/apiOrganizastock.png"
+                alt="imagem do projeto apiOrganizastock"
+              />
+
+              <div class="aboutProject">
+                <p>Api Organizastock</p>
+
+                <span>Tecnologias utilizadas:</span>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./public/icons/node-icon.svg"
+                      alt="ícone do node"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/sequelize-icon.svg"
+                      alt="ícone do sequelize"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/mysql-icon.svg"
+                      alt="ícone do mysql"
+                    />
+                  </li>
+                </ul>
+
+                <div class="buttons">
+                  <a
+                    href="https://github.com/alextfonseca/ApiOrganizastock"
+                    target="_blank"
+                    rel="noopener"
+                    >Saiba mais</a
+                  >
+
+                  <a
+                    href="https://github.com/alextfonseca/ApiOrganizastock"
+                    target="_blank"
+                    rel="noopener"
+                    >Acessar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <img
+                class="projectPhoto"
+                src="./public/images/blognews.png"
+                alt="imagem do projeto blognews"
+              />
+
+              <div class="aboutProject">
+                <p>Blognews</p>
+
+                <span>Tecnologias utilizadas:</span>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./public/icons/next-icon.svg"
+                      alt="Ícone do next.js"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/typescript-icon.svg"
+                      alt="Ícone do typescript"
+                    />
+                  </li>
+                </ul>
+
+                <div class="buttons">
+                  <a
+                    href="https://github.com/alextfonseca/blognews"
+                    target="_blank"
+                    rel="noopener"
+                    >Saiba mais</a
+                  >
+
+                  <a
+                    href="https://blognews.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Acessar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <img
+                class="projectPhoto"
+                src="./public/images/dashgo.png"
+                alt="imagem do projeto dashgo"
+              />
+
+              <div class="aboutProject">
+                <p>DashGo</p>
+
+                <span>Tecnologias utilizadas:</span>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./public/icons/next-icon.svg"
+                      alt="ícone do next.js"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/typescript-icon.svg"
+                      alt="ícone do typescript"
+                    />
+                  </li>
+                </ul>
+
+                <div class="buttons">
+                  <a
+                    href="https://github.com/alextfonseca/dashgo"
+                    target="_blank"
+                    rel="noopener"
+                    >Saiba mais</a
+                  >
+
+                  <a
+                    href="https://dashgo-pink.vercel.app/dashboard"
+                    target="_blank"
+                    rel="noopener"
+                    >Acessar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <img
+                class="projectPhoto"
+                src="./public/images/organizastock.png"
+                alt="imagem do projeto organizastock"
+              />
+
+              <div class="aboutProject">
+                <p>Organizastock</p>
+
+                <span>Tecnologias utilizadas:</span>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./public/icons/next-icon.svg"
+                      alt="ícone do next.js"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/typescript-icon.svg"
+                      alt="ícone do typescript"
+                    />
+                  </li>
+                </ul>
+
+                <div class="buttons">
+                  <a
+                    href="https://github.com/alextfonseca/Organizastock"
+                    target="_blank"
+                    rel="noopener"
+                    >Saiba mais</a
+                  >
+
+                  <a
+                    href="https://organizastock.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Acessar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <img
+                class="projectPhoto"
+                src="./public/images/tcon.png"
+                alt="imagem do projeto tcon"
+              />
+
+              <div class="aboutProject">
+                <p>TCON</p>
+
+                <span>Tecnologias utilizadas:</span>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./public/icons/react-icon.svg"
+                      alt="ícone do react"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/node-icon.svg"
+                      alt="ícone do node"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/sequelize-icon.svg"
+                      alt="ícone do sequelize"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/mysql-icon.svg"
+                      alt="ícone do mysql"
+                    />
+                  </li>
+                </ul>
+
+                <div class="buttons">
+                  <a
+                    href="https://github.com/alextfonseca/T.C.O.N"
+                    target="_blank"
+                    rel="noopener"
+                    >Saiba mais</a
+                  >
+
+                  <a
+                    href="https://github.com/alextfonseca/T.C.O.N"
+                    target="_blank"
+                    rel="noopener"
+                    >Acessar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <img
+                class="projectPhoto"
+                src="./public/images/travel.png"
+                alt="imagem do projeto travel"
+              />
+
+              <div class="aboutProject">
+                <p>Travel</p>
+
+                <span>Tecnologias utilizadas:</span>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./public/icons/react-icon.svg"
+                      alt="ícone do react"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./public/icons/typescript-icon.svg"
+                      alt="ícone do typescript"
+                    />
+                  </li>
+                </ul>
+
+                <div class="buttons">
+                  <a
+                    href="https://github.com/alextfonseca/Travel"
+                    target="_blank"
+                    rel="noopener"
+                    >Saiba mais</a
+                  >
+
+                  <a
+                    href="https://travel-zeta.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Acessar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
       </section>
 
-      <a class="separator" href="#projects" rel="noopener"><img src="./public/icons/expandContent-icon.svg" alt="ícone de uma seta apontada para baixo"></a>
+      <section class="aboutMe" id="aboutMe">
+        <div class="container">
+          <h2>Sobre mim <span>.</span></h2>
 
-    </div>
-
-
-    <section class="projects" id="projects">
-      <div class="container">
-
-        <div class="header">
-          <h2>Principais projetos <span>.</span></h2>
-          <a href="https://github.com/alextfonseca?tab=repositories" target="_blank" rel="noopener">Todos projetos</a>
+          <p>
+            Dinâmico, espírito de servir, trabalho em grupo, boa comunicação e
+            facilidade em trabalhar nos padrões exigidos pela empresa. Estou em
+            busca de minha primeira oportunidade na área de tecnologia. Fui
+            aluno representante, tutor na área de exatas e capitão da equipe de
+            robótica do SESI São Roque. Atualmente curso Sistemas para Internet
+            na F.A.T.E.C. de São Roque SP, estudo muito a área de U.I./U.X.
+            design e desenvolvimento Front-end.
+          </p>
         </div>
+      </section>
 
-        <div class="projectsList">
+      <section class="studies" id="studies">
+        <div class="container">
+          <h2>Cursos <span>.</span></h2>
 
-          <div class="project">
-            <img class="projectPhoto" src="./public/images/apiOrganizastock.png" alt="imagem do projeto apiOrganizastock">
+          <div class="cards">
+            <div class="card">
+              <span>Treinamento</span>
+              <p>Ignite React.js</p>
+              <span class="local">Rockteseat</span>
+            </div>
 
-            <div class="aboutProject">
-              <p>Api Organizastock</p>
+            <div class="card">
+              <span>Curso</span>
+              <p>JavaScript ES6+</p>
+              <span class="local">Origamid</span>
+            </div>
 
-              <span>Tecnologias utilizadas:</span>
+            <div class="card">
+              <span>Curso</span>
+              <p>Css com Sass</p>
+              <span class="local">Origamid</span>
+            </div>
 
-              <ul>
-                <li><img src="./public/icons/node-icon.svg" alt="ícone do node"></li>
-                <li><img src="./public/icons/sequelize-icon.svg" alt="ícone do sequelize"></li>
-                <li><img src="./public/icons/mysql-icon.svg" alt="ícone do mysql"></li>
-              </ul>
+            <div class="card">
+              <span>Curso</span>
+              <p>Boostrap 4</p>
+              <span class="local">Origamid</span>
+            </div>
 
-              <div class="buttons">
-                <a href="https://github.com/alextfonseca/ApiOrganizastock" target="_blank" rel="noopener">Saiba mais</a>
+            <div class="card">
+              <span>Curso</span>
+              <p>UX Design</p>
+              <span class="local">Origamid</span>
+            </div>
 
-                <a href="https://github.com/alextfonseca/ApiOrganizastock" target="_blank" rel="noopener">Acessar</a>
-              </div>
+            <div class="card">
+              <span>Curso</span>
+              <p>CSS Grid Layout</p>
+              <span class="local">Origamid</span>
+            </div>
+
+            <div class="card">
+              <span>Curso</span>
+              <p>UI Design Avançado</p>
+              <span class="local">Origamid</span>
+            </div>
+
+            <div class="card">
+              <span>Curso</span>
+              <p>Tipografia Avançada</p>
+              <span class="local">Origamid</span>
+            </div>
+
+            <div class="card">
+              <span>Curso</span>
+              <p>Web Design Completo</p>
+              <span class="local">Origamid</span>
             </div>
           </div>
-
-          <div class="project">
-            <img class="projectPhoto" src="./public/images/blognews.png" alt="imagem do projeto blognews">
-
-            <div class="aboutProject">
-              <p>Blognews</p>
-
-              <span>Tecnologias utilizadas:</span>
-
-              <ul>
-                <li><img src="./public/icons/next-icon.svg" alt="Ícone do next.js"></li>
-                <li><img src="./public/icons/typescript-icon.svg" alt="Ícone do typescript"></li>
-              </ul>
-
-              <div class="buttons">
-                <a href="https://github.com/alextfonseca/blognews" target="_blank" rel="noopener">Saiba mais</a>
-
-                <a href="https://blognews.vercel.app/" target="_blank" rel="noopener">Acessar</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project">
-
-            <img class="projectPhoto" src="./public/images/dashgo.png" alt="imagem do projeto dashgo">
-
-            <div class="aboutProject">
-              <p>DashGo</p>
-
-              <span>Tecnologias utilizadas:</span>
-
-              <ul>
-                <li><img src="./public/icons/next-icon.svg" alt="ícone do next.js"></li>
-                <li><img src="./public/icons/typescript-icon.svg" alt="ícone do typescript"></li>
-              </ul>
-
-              <div class="buttons">
-                <a href="https://github.com/alextfonseca/dashgo" target="_blank" rel="noopener">Saiba mais</a>
-
-                <a href="https://dashgo-pink.vercel.app/dashboard" target="_blank" rel="noopener">Acessar</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project">
-            <img class="projectPhoto" src="./public/images/organizastock.png" alt="imagem do projeto organizastock">
-
-            <div class="aboutProject">
-              <p>Organizastock</p>
-
-              <span>Tecnologias utilizadas:</span>
-
-              <ul>
-                <li><img src="./public/icons/next-icon.svg" alt="ícone do next.js"></li>
-                <li><img src="./public/icons/typescript-icon.svg" alt="ícone do typescript"></li>
-
-              </ul>
-
-              <div class="buttons">
-                <a href="https://github.com/alextfonseca/Organizastock" target="_blank" rel="noopener">Saiba mais</a>
-
-                <a href="https://organizastock.vercel.app/" target="_blank" rel="noopener">Acessar</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project">
-
-            <img class="projectPhoto" src="./public/images/tcon.png" alt="imagem do projeto tcon">
-
-            <div class="aboutProject">
-              <p>TCON</p>
-
-              <span>Tecnologias utilizadas:</span>
-
-              <ul>
-                <li><img src="./public/icons/react-icon.svg" alt="ícone do react"></li>
-                <li><img src="./public/icons/node-icon.svg" alt="ícone do node"></li>
-                <li><img src="./public/icons/sequelize-icon.svg" alt="ícone do sequelize"></li>
-                <li><img src="./public/icons/mysql-icon.svg" alt="ícone do mysql"></li>
-              </ul>
-
-              <div class="buttons">
-                <a href="https://github.com/alextfonseca/T.C.O.N" target="_blank" rel="noopener">Saiba mais</a>
-
-                <a href="https://github.com/alextfonseca/T.C.O.N" target="_blank" rel="noopener">Acessar</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project">
-
-            <img class="projectPhoto" src="./public/images/travel.png" alt="imagem do projeto travel">
-
-            <div class="aboutProject">
-              <p>Travel</p>
-
-              <span>Tecnologias utilizadas:</span>
-
-              <ul>
-                <li><img src="./public/icons/react-icon.svg" alt="ícone do react"></li>
-                <li><img src="./public/icons/typescript-icon.svg" alt="ícone do typescript"></li>
-              </ul>
-
-              <div class="buttons">
-                <a href="https://github.com/alextfonseca/Travel" target="_blank" rel="noopener">Saiba mais</a>
-
-                <a href="https://travel-zeta.vercel.app/" target="_blank" rel="noopener">Acessar</a>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>Contato <span>.</span></h2>
 
-    <section class="aboutMe" id="aboutMe">
-      <div class="container">
-        <h2>Sobre mim <span>.</span></h2>
+          <div class="contacts">
+            <div>
+              <a
+                href="https://wa.me/+5511976184659?text=Olá%20Alex"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="./public/icons/whatsapp-icon.svg"
+                  alt="Ícone do whatsapp"
+                />
+              </a>
+              <p>(11) 97618-4659</p>
+            </div>
 
-        <p>Dinâmico, espírito de servir, trabalho em grupo, boa comunicação e facilidade em trabalhar nos padrões exigidos pela empresa.
+            <div>
+              <img src="./public/icons/email-icon.svg" alt="Ícone do email" />
+              <p>alexatf2014@gmail.com</p>
+            </div>
 
-          Estou em busca de minha primeira oportunidade na área de tecnologia.
-
-          Fui aluno representante, tutor na área de exatas e capitão da equipe de robótica do SESI São Roque.
-          Atualmente curso Sistemas para Internet na F.A.T.E.C. de São Roque SP, estudo muito a área de U.I./U.X. design e desenvolvimento Front-end.</p>
-      </div>
-    </section>
-
-
-    <section class="studies" id="studies">
-
-      <div class="container">
-
-        <h2>Cursos <span>.</span></h2>
-
-        <div class="cards">
-
-          <div class="card">
-            <span>Treinamento</span>
-            <p>Ignite React.js</p>
-            <span class="local">Rockteseat</span>
+            <div>
+              <img
+                src="./public/icons/phone-icon.svg"
+                alt="Ícone do telefone"
+              />
+              <p>(11) 4714-1038</p>
+            </div>
           </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>JavaScript ES6+</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>Css com Sass</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>Boostrap 4</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>UX Design</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>CSS Grid Layout</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>UI Design Avançado</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>Tipografia Avançada</p>
-            <span class="local">Origamid</span>
-          </div>
-
-          <div class="card">
-            <span>Curso</span>
-            <p>Web Design Completo</p>
-            <span class="local">Origamid</span>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="contact" id="contact">
-      <div class="container">
+    <footer>
+      <p>Criado por Alex Teixeira da Fonseca</p>
+    </footer>
 
-        <h2>Contato <span>.</span></h2>
-
-        <div class="contacts">
-
-          <div>
-            <a href="https://wa.me/+5511976184659?text=Olá%20Alex" target="_blank" rel="noopener">
-              <img src="./public/icons/whatsapp-icon.svg" alt="Ícone do whatsapp">
-            </a>
-            <p>(11) 97618-4659</p>
-          </div>
-
-          <div>
-            <img src="./public/icons/email-icon.svg" alt="Ícone do email">
-            <p>alexatf2014@gmail.com</p>
-          </div>
-
-          <div>
-            <img src="./public/icons/phone-icon.svg" alt="Ícone do telefone">
-            <p>(11) 4714-1038</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Criado por Alex Teixeira da Fonseca</p>
-  </footer>
-
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
