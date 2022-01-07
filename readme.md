@@ -17,14 +17,14 @@ Para instalar o projeto, siga estas etapas:
 Linux e macOS:
 
 ```bash
-git clone https://github.com/alextfonseca/alextfonseca.github.io.git
+$ git clone https://github.com/alextfonseca/alextfonseca.github.io.git
 $ cd alextfonseca.github.io-main
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/alextfonseca/alextfonseca.github.io.git
+$ git clone https://github.com/alextfonseca/alextfonseca.github.io.git
 $ cd alextfonseca.github.io-main
 ```
 
