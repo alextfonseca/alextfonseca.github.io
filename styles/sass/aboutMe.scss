@@ -1,5 +1,10 @@
 .aboutMe {
-  margin-top: 6rem;
+  padding: 6rem 0;
+
+  z-index: 100;
+  position: relative;
+
+  background: var(--background);
 
   text-align: center;
 
